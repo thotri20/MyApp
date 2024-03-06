@@ -1,0 +1,27 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sky {
+    background: #87CEEB;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .plane {
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background: #FFD700;
+  }
+  

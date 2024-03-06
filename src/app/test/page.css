@@ -1,3 +1,47 @@
-.myStyle{
-    background-color: lightblue;
+.vindstyrkestyle{
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: grey;
+  text-align: center;
+  
+}
+
+.tidstyle{
+  width: 350px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: gray;
+  text-align: center;
+  padding: 14px;
+  border: 4px solid #181818;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.varmestyle
+{
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: orange;
+  text-align: center;
+}
+.based{
+  background-image: url('https://t4.ftcdn.net/jpg/04/97/80/99/360_F_497809944_FMo3DO6j7XSlb9rZKOlnqaaWoJhuZXBm.jpg');
+  background-size: contain;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+.header{
+  width: 2000;
+  height: 50;
+  background-image: url(https://t4.ftcdn.net/jpg/04/97/80/99/360_F_497809944_FMo3DO6j7XSlb9rZKOlnqaaWoJhuZXBm.jpg);
+  background-size: cover;
+  text-align: center;
+}
+
+.break{
+  height: 12px;
 }
