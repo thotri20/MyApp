@@ -30,18 +30,34 @@
 }
 .based{
   background-image: url('https://t4.ftcdn.net/jpg/04/97/80/99/360_F_497809944_FMo3DO6j7XSlb9rZKOlnqaaWoJhuZXBm.jpg');
-  background-size: cover;
+  background-size: 424px;
+  height: 100%;
+  
+  
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   
 }
 .header{
   width: 2000;
-  height: 50;
-  background-image: url(https://t4.ftcdn.net/jpg/04/97/80/99/360_F_497809944_FMo3DO6j7XSlb9rZKOlnqaaWoJhuZXBm.jpg);
+  height: 110px;
+  background-color: #4aa9bb;
   background-size: cover;
   text-align: center;
+
 }
 
 .break{
   height: 12px;
+}
+
+.knapp{
+ width: 150px;
+ height: 50px;
+ margin-left: auto;
+ margin-right: auto;
+background-color: ghostwhite;
+border-radius: 15px ;
+text-align: center;
+padding:11px;
+color: black;
 }

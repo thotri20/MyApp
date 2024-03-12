@@ -15,7 +15,8 @@ export default async function Home() {
   
   return <main>
     <div className="header">
-            <font size="6"> Triumf Været</font>
+            <font size="6">Triumf Været</font>
+            <h1>Hamar</h1>
             </div>
     {
       data.properties.timeseries.map(
@@ -39,7 +40,7 @@ export default async function Home() {
                 {timeobj.data.instant.details.precipitation_amount_min}
                 {timeobj.data.instant.details.precipitation_amount_max}
 
-                <title>Triumf Været</title>
+                <title>Triumf Været: Hamar</title>
 
               </div>
               <div className="break"></div>

@@ -2,7 +2,7 @@ import Image from "next/image";
 import "./page.css";
 
 async function getData() {
-  const res = await fetch('https://api.met.no/weatherapi/locationforecast/2.0/complete?lat=60.8&lon=11.06', {next: {revalidate: 3600} })
+  const res = await fetch('https://api.met.no/weatherapi/locationforecast/2.0/complete?lat=60.88&lon=11.55', {next: {revalidate: 3600} })
  
   if (!res.ok){
     throw new Error('Failed to fetch data')
@@ -15,7 +15,8 @@ export default async function Home() {
   
   return <main>
     <div className="header">
-            <font size="6"> Triumf Været</font>
+            <font size="6">Triumf Været</font>
+            <h1>Elverum</h1>
             </div>
     {
       data.properties.timeseries.map(
@@ -26,7 +27,7 @@ export default async function Home() {
 
             <div className="based">
             
-              <div className="tidstyle">
+              <div className="container">
                 <h1>Tid & Dato</h1>
                 {timeobj.time}
                 <br></br>
@@ -39,7 +40,7 @@ export default async function Home() {
                 {timeobj.data.instant.details.precipitation_amount_min}
                 {timeobj.data.instant.details.precipitation_amount_max}
 
-                <title>Triumf Været</title>
+                <title>Triumf Været: Elverum</title>
 
               </div>
               <div className="break"></div>
