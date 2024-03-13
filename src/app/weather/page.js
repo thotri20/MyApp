@@ -30,6 +30,18 @@ export default function Home() {
             <button>Kautokeino</button>
           </div>
         </Link>
+        <br></br>
+        <Link href="/weather/sydney">
+          <div className="knapp">
+            <button>Sydney</button>
+          </div>
+        </Link>
+        <br></br>
+        <Link href="/weather/cin.ohio">
+          <div className="knapp">
+            <button>Cincinnati, Ohio</button>
+          </div>
+        </Link>
       </div>
     </div>
    </div>

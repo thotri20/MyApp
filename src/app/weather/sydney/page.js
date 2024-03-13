@@ -3,7 +3,7 @@ import "./page.css";
 import Link from "next/link";
 async function getData() {
   const res = await fetch(
-    "https://api.met.no/weatherapi/locationforecast/2.0/complete?lat=60.88&lon=11.55",
+    "https://api.met.no/weatherapi/locationforecast/2.0/complete?lat=-33.89&lon=151.13",
     { next: { revalidate: 3600 } }
   );
 
@@ -12,6 +12,7 @@ async function getData() {
   }
   console.log(res);
   return res.json();
+
 }
 
 export default async function Home() {
@@ -22,7 +23,7 @@ export default async function Home() {
       <div>
         <div className="header">
           <font size="6">Triumf Været</font>
-          <h1>Elverum</h1>
+          <h1>Sydney</h1>
         </div>
         <div>
           <Link href="/weather">
@@ -31,7 +32,7 @@ export default async function Home() {
             </div>
           </Link>
         </div>
-        <title>Elverum</title>
+        <title>Sydney</title>
       </div>
       {data.properties.timeseries.map(function (timeobj) {
         const date = new Date(timeobj.time);
@@ -43,10 +44,9 @@ export default async function Home() {
           minute: "numeric",
           hourCycle: "h23",
         }).format(date);
-
         return (
           <>
-            <div className="based">
+            <div>
               <div className="container">
                 <div className="timebox">{formattedDateTime}</div>
                 <div className="bracket1">
@@ -84,14 +84,17 @@ export default async function Home() {
                 <div className="bracket3">
                   <div className="nedbor">
                     <div className="heading">
+
                       <h1>Nedbør</h1>
-                      <img 
-                      src="/rain-icon.png"
-                      alt="Rain icon"
-                      width={20}
-                      height={20}
+                      <img
+                        src="/rain-icon.png"
+                        alt="Rain icon"
+                        width={20}
+                        height={20}
                       />
                     </div>
+                    {timeobj.data.instant.details.precipitation_amount_min}
+                    {timeobj.data.instant.details.precipitation_amount_max}
                   </div>
                 </div>
               </div>

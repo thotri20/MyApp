@@ -3,7 +3,7 @@ import "./page.css";
 import Link from "next/link";
 async function getData() {
   const res = await fetch(
-    "https://api.met.no/weatherapi/locationforecast/2.0/complete?lat=60.88&lon=11.55",
+    "https://api.met.no/weatherapi/locationforecast/2.0/complete?lat=39.103119&lon=-84.512016",
     { next: { revalidate: 3600 } }
   );
 
@@ -22,7 +22,7 @@ export default async function Home() {
       <div>
         <div className="header">
           <font size="6">Triumf Været</font>
-          <h1>Elverum</h1>
+          <h1>Cincinnati, Ohio</h1>
         </div>
         <div>
           <Link href="/weather">
@@ -31,7 +31,7 @@ export default async function Home() {
             </div>
           </Link>
         </div>
-        <title>Elverum</title>
+        <title>Cincinnati, Ohio</title>
       </div>
       {data.properties.timeseries.map(function (timeobj) {
         const date = new Date(timeobj.time);
