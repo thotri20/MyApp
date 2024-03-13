@@ -1,11 +1,4 @@
-.vindstyrkestyle{
-  width: 100px;
-  height: 50px;
-  border-radius: 10px;
-  background-color: grey;
-  text-align: center;
-  
-}
+
 
 .tidstyle{
   width: 350px;
@@ -20,18 +13,12 @@
   
 }
 
-.varmestyle
-{
-  width: 100px;
-  height: 50px;
-  border-radius: 10px;
-  background-color: orange;
-  text-align: center;
-}
+
 .based{
-  background-image: url('https://t4.ftcdn.net/jpg/04/97/80/99/360_F_497809944_FMo3DO6j7XSlb9rZKOlnqaaWoJhuZXBm.jpg');
-  background-size: contain;
+  background-color: #181818;
+  background-size: cover;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  height: auto;
   
 }
 .header{
@@ -43,5 +30,88 @@
 }
 
 .break{
-  height: 12px;
+  height: 310px;
+  background-color: #fff
+}
+
+.container{
+  display: flex;
+  height: 100px;
+  width: 1200px;
+  float: items-center;
+  margin-left:px;
+  margin: 100px;
+
+  border-radius: 2px;
+}
+.bracket1{
+  width: 200px;
+  height: 50px;
+  background-color: #181818;
+  
+  
+  
+}
+
+.bracket2{
+  width: 200px;
+  height: 50px;
+  background-color: #181818;
+}
+
+.bracket3{
+  width: 100px;
+  height: 50px;
+  background-color: #181818;
+  margin-left: 50;
+}
+
+.timebox{
+  text-align: left;
+  background-color: #181818;
+  padding: 20px;
+  width: 200px;
+  height: 50px;
+  margin-left: 500px;
+  ;
+}
+
+.vind{
+  text-align: left;
+  padding:  15px;
+}
+.temp{
+  text-align: left;
+  padding: 15px;
+}
+.horizStripe{
+  width: 700px;
+  height: 2px;
+  background-color: #fff;
+  margin-left: 630px;
+  margin-top: -100px;
+  
+}
+.nedbor{
+  text-align: left;
+  padding: 15px;
+}
+.text{
+  z-index: 1;
+}
+
+.image{
+  z-index: 2;
+}
+.vertStripe{
+  height: 55px;
+  width: 2px;
+  background-color: #fff;
+  margin-top: -75px}
+
+.heading{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 10px;
 }
