@@ -24,6 +24,12 @@ export default function Home() {
             <button>Elverum</button>
           </div>
         </Link>
+        <br></br>
+        <Link href="/weather/kauto">
+          <div className="knapp">
+            <button>Kautokeino</button>
+          </div>
+        </Link>
       </div>
     </div>
    </div>
